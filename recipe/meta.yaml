@@ -43,7 +43,7 @@ requirements:
     - txl-markdown-viewer ==0.2.13
     - txl-terminal ==0.2.13
     - txl-launcher ==0.2.13
-    - txl_widgets ==0.2.14
+    - txl-widgets ==0.2.14
 
 test:
   # `pip check` was disabled, see: https://github.com/conda-forge/staged-recipes/pull/26869
