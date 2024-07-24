@@ -1,5 +1,5 @@
 {% set name = "jpterm" %}
-{% set version = "0.2.15" %}
+{% set version = "0.2.16" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 862f6492b9fc050beb9fe4106c9258966d92cf6f619d3397f326adefd0b7a22d
+  sha256: b95bbdb22f903e31f77e79667e0a45055941629faef23632a25565afc16febd6
 
 build:
   noarch: python
@@ -24,22 +24,26 @@ requirements:
   run:
     - python >=3.10
     - rich-click >=1.6.0
-    - txl ==0.2.15
+    - txl ==0.2.16
     - txl-cell ==0.2.13
-    - txl-console ==0.2.13
+    - txl-console ==0.2.14
     - txl-editors ==0.2.13
     - txl-file-browser ==0.2.13
+    - txl-image-viewer ==0.2.13
     - txl-jpterm ==0.2.13
     - txl-kernel ==0.2.13
     - txl-local-contents ==0.2.13
     - txl-local-terminals ==0.2.13
     - txl-local-kernels ==0.2.13
     - txl-notebook-editor ==0.2.13
+    - txl-remote-contents ==0.2.13
+    - txl-remote-terminals ==0.2.13
+    - txl-remote-kernels ==0.2.13
     - txl-text-editor ==0.2.13
     - txl-markdown-viewer ==0.2.13
     - txl-terminal ==0.2.13
     - txl-launcher ==0.2.13
-    - httpx >=0.23.1
+    - txl_widgets ==0.2.14
 
 test:
   # `pip check` was disabled, see: https://github.com/conda-forge/staged-recipes/pull/26869
