@@ -1,5 +1,5 @@
 {% set name = "jpterm" %}
-{% set version = "0.2.18" %}
+{% set version = "0.2.19" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 00ba8d1f138db876561833c1d9a6b673f61ed799f6834882fa1449852c300f23
+  sha256: 8115cae93210ed5c6741e86e88d1da346f3a3465cd783a25d78740e33f19045c
 
 build:
   noarch: python
@@ -24,26 +24,26 @@ requirements:
   run:
     - python >=3.10
     - rich-click >=1.6.0
-    - txl ==0.2.18
-    - txl-cell ==0.2.13
-    - txl-console ==0.2.14
-    - txl-editors ==0.2.13
-    - txl-file-browser ==0.2.13
-    - txl-image-viewer ==0.2.13
-    - txl-jpterm ==0.2.13
-    - txl-kernel ==0.2.13
-    - txl-local-contents ==0.2.13
-    - txl-local-terminals ==0.2.13
-    - txl-local-kernels ==0.2.13
-    - txl-notebook-editor ==0.2.13
-    - txl-remote-contents ==0.2.13
-    - txl-remote-terminals ==0.2.13
-    - txl-remote-kernels ==0.2.13
-    - txl-text-editor ==0.2.13
-    - txl-markdown-viewer ==0.2.13
-    - txl-terminal ==0.2.13
-    - txl-launcher ==0.2.13
-    - txl-widgets ==0.2.14
+    - txl =0.2.19
+    - txl-cell =0.2.14
+    - txl-console =0.2.16
+    - txl-editors =0.2.14
+    - txl-file-browser =0.2.14
+    - txl-image-viewer =0.2.14
+    - txl-jpterm =0.2.14
+    - txl-kernel =0.2.14
+    - txl-local-contents =0.2.14
+    - txl-local-terminals =0.2.14
+    - txl-local-kernels =0.2.14
+    - txl-notebook-editor =0.2.14
+    - txl-remote-contents =0.2.14
+    - txl-remote-terminals =0.2.14
+    - txl-remote-kernels =0.2.14
+    - txl-text-editor =0.2.14
+    - txl-markdown-viewer =0.2.14
+    - txl-terminal =0.2.14
+    - txl-launcher =0.2.14
+    - txl-widgets =0.2.15
 
 test:
   # `pip check` was disabled, see: https://github.com/conda-forge/staged-recipes/pull/26869
