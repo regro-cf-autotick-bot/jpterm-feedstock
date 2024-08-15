@@ -24,7 +24,7 @@ requirements:
   run:
     - python >=3.10
     - rich-click >=1.6.0
-    - txl ==0.2.16
+    - txl ==0.2.18
     - txl-cell ==0.2.13
     - txl-console ==0.2.14
     - txl-editors ==0.2.13
