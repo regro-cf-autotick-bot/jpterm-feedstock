@@ -1,5 +1,5 @@
 {% set name = "jpterm" %}
-{% set version = "0.2.16" %}
+{% set version = "0.2.18" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b95bbdb22f903e31f77e79667e0a45055941629faef23632a25565afc16febd6
+  sha256: 00ba8d1f138db876561833c1d9a6b673f61ed799f6834882fa1449852c300f23
 
 build:
   noarch: python
@@ -24,7 +24,7 @@ requirements:
   run:
     - python >=3.10
     - rich-click >=1.6.0
-    - txl ==0.2.16
+    - txl ==0.2.18
     - txl-cell ==0.2.13
     - txl-console ==0.2.14
     - txl-editors ==0.2.13
