@@ -24,26 +24,26 @@ requirements:
   run:
     - python >=3.10
     - rich-click >=1.6.0
-    - txl ==0.2.18
-    - txl-cell ==0.2.13
-    - txl-console ==0.2.14
-    - txl-editors ==0.2.13
-    - txl-file-browser ==0.2.13
-    - txl-image-viewer ==0.2.13
-    - txl-jpterm ==0.2.13
-    - txl-kernel ==0.2.13
-    - txl-local-contents ==0.2.13
-    - txl-local-terminals ==0.2.13
-    - txl-local-kernels ==0.2.13
-    - txl-notebook-editor ==0.2.13
-    - txl-remote-contents ==0.2.13
-    - txl-remote-terminals ==0.2.13
-    - txl-remote-kernels ==0.2.13
-    - txl-text-editor ==0.2.13
-    - txl-markdown-viewer ==0.2.13
-    - txl-terminal ==0.2.13
-    - txl-launcher ==0.2.13
-    - txl-widgets ==0.2.14
+    - txl =0.2.19
+    - txl_cell =0.2.14
+    - txl_console =0.2.16
+    - txl_editors =0.2.14
+    - txl_file_browser =0.2.14
+    - txl_image_viewer =0.2.14
+    - txl_jpterm =0.2.14
+    - txl_kernel =0.2.14
+    - txl_local_contents =0.2.14
+    - txl_local_terminals =0.2.14
+    - txl_local_kernels =0.2.14
+    - txl_notebook_editor =0.2.14
+    - txl_remote_contents =0.2.14
+    - txl_remote_terminals =0.2.14
+    - txl_remote_kernels =0.2.14
+    - txl_text_editor =0.2.14
+    - txl_markdown_viewer =0.2.14
+    - txl_terminal =0.2.14
+    - txl_launcher =0.2.14
+    - txl_widgets =0.2.15
 
 test:
   # `pip check` was disabled, see: https://github.com/conda-forge/staged-recipes/pull/26869
