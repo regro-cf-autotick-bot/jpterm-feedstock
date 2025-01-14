@@ -1,3 +1,4 @@
+{% set python_min = '3.10' %}
 {% set name = "jpterm" %}
 {% set version = "0.2.20" %}
 
@@ -11,18 +12,18 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   entry_points:
     - jpterm = jpterm.cli:main
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:
-    - python >=3.10
+    - python {{ python_min }}
     - pip
     - hatchling
   run:
-    - python >=3.10
+    - python >={{ python_min }}
     - rich-click >=1.6.0
     - txl =0.2.20
     - txl-cell =0.2.15
@@ -52,6 +53,8 @@ test:
   #   - pip
   # commands:
   #   - pip check
+  requires:
+    - python {{ python_min }}
   imports:
     - jpterm
   commands:
