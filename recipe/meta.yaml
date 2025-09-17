@@ -1,5 +1,5 @@
 {% set name = "jpterm" %}
-{% set version = "0.3.7" %}
+{% set version = "0.3.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 810c16ecbe1e80dc858068376448c86302216519ec2cb041bfd83aeb05702f26
+  sha256: a39a1e89305f51411f8c19a30a0bd8c40d38e1a41d41d5775fe16ca3377ac5aa
 
 build:
   noarch: python
