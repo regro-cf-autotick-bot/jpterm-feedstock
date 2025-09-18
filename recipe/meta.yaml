@@ -31,7 +31,7 @@ requirements:
     - txl-file-browser =0.3.6
     - txl-image-viewer =0.3.6
     - txl-jpterm =0.3.6
-    - txl-kernel =0.3.7
+    - txl-kernel =0.3.8
     - txl-local-contents =0.3.6
     - txl-local-terminals =0.3.6
     - txl-local-kernels =0.3.6
