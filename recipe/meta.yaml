@@ -1,17 +1,17 @@
 {% set name = "jpterm" %}
-{% set version = "0.3.8" %}
+{% set version = "0.3.11" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a39a1e89305f51411f8c19a30a0bd8c40d38e1a41d41d5775fe16ca3377ac5aa
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 6036b4d09984e468fb2a1bf1c17ffde626d756a6718d616d522042c91de4b4f6
 
 build:
   noarch: python
-  number: 1
+  number: 0
   entry_points:
     - jpterm = jpterm.cli:main
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
